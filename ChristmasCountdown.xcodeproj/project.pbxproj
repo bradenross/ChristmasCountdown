@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9CC7B6EA2C351029003C57A9 /* BackgroundImageSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC7B6E92C351029003C57A9 /* BackgroundImageSelector.swift */; };
+		9CC7B6EF2C3A6099003C57A9 /* CountdownTypeSelectionMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC7B6EE2C3A6099003C57A9 /* CountdownTypeSelectionMenu.swift */; };
+		9CC7B6F12C3B9285003C57A9 /* VerseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC7B6F02C3B9285003C57A9 /* VerseData.swift */; };
+		9CC7B6F32C3B928C003C57A9 /* Verse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CC7B6F22C3B928C003C57A9 /* Verse.swift */; };
 		9CD7C6A42C18F33F003B4AF1 /* ChristmasCountdownApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6A32C18F33F003B4AF1 /* ChristmasCountdownApp.swift */; };
 		9CD7C6A62C18F33F003B4AF1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6A52C18F33F003B4AF1 /* ContentView.swift */; };
 		9CD7C6A82C18F340003B4AF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CD7C6A72C18F340003B4AF1 /* Assets.xcassets */; };
@@ -14,6 +18,42 @@
 		9CD7C6B52C18F340003B4AF1 /* ChristmasCountdownTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6B42C18F340003B4AF1 /* ChristmasCountdownTests.swift */; };
 		9CD7C6BF2C18F340003B4AF1 /* ChristmasCountdownUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6BE2C18F340003B4AF1 /* ChristmasCountdownUITests.swift */; };
 		9CD7C6C12C18F340003B4AF1 /* ChristmasCountdownUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6C02C18F340003B4AF1 /* ChristmasCountdownUITestsLaunchTests.swift */; };
+		9CD7C6CE2C1900D1003B4AF1 /* CountdownPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6CD2C1900D1003B4AF1 /* CountdownPage.swift */; };
+		9CD7C6D02C1AA56A003B4AF1 /* CountdownTimeSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6CF2C1AA56A003B4AF1 /* CountdownTimeSelector.swift */; };
+		9CD7C6D32C1AAF91003B4AF1 /* CountdownTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6D22C1AAF91003B4AF1 /* CountdownTimer.swift */; };
+		9CD7C6D62C1AC0B2003B4AF1 /* VersesPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6D52C1AC0B2003B4AF1 /* VersesPage.swift */; };
+		9CD7C6D92C1BF726003B4AF1 /* MusicPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6D82C1BF726003B4AF1 /* MusicPage.swift */; };
+		9CD7C6DB2C1BFB57003B4AF1 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6DA2C1BFB57003B4AF1 /* AudioPlayer.swift */; };
+		9CD7C6E02C1C040E003B4AF1 /* FlipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6DF2C1C040E003B4AF1 /* FlipView.swift */; };
+		9CD7C6E22C1CD0FC003B4AF1 /* songList.json in Resources */ = {isa = PBXBuildFile; fileRef = 9CD7C6E12C1CD0FB003B4AF1 /* songList.json */; };
+		9CD7C6E62C1CD2BC003B4AF1 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6E52C1CD2BC003B4AF1 /* Song.swift */; };
+		9CD7C6E82C1CD2DC003B4AF1 /* SongData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6E72C1CD2DC003B4AF1 /* SongData.swift */; };
+		9CD7C6F02C1FE67C003B4AF1 /* verses.json in Resources */ = {isa = PBXBuildFile; fileRef = 9CD7C6EF2C1FE67C003B4AF1 /* verses.json */; };
+		9CD7C6F32C200049003B4AF1 /* ListsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6F22C200049003B4AF1 /* ListsPage.swift */; };
+		9CD7C6F52C214306003B4AF1 /* CustomTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6F42C214306003B4AF1 /* CustomTabView.swift */; };
+		9CD7C6F72C28DAD8003B4AF1 /* SingleListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6F62C28DAD8003B4AF1 /* SingleListPage.swift */; };
+		9CD7C6F92C28DC36003B4AF1 /* ListPersonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6F82C28DC36003B4AF1 /* ListPersonItem.swift */; };
+		9CD7C6FB2C28DDEF003B4AF1 /* SettingsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6FA2C28DDEF003B4AF1 /* SettingsPage.swift */; };
+		9CD7C6FE2C28DE05003B4AF1 /* AboutPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C6FD2C28DE05003B4AF1 /* AboutPage.swift */; };
+		9CD7C7022C28E786003B4AF1 /* ListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C7012C28E786003B4AF1 /* ListManager.swift */; };
+		9CD7C7042C28E983003B4AF1 /* ChristmasLists.json in Resources */ = {isa = PBXBuildFile; fileRef = 9CD7C7032C28E983003B4AF1 /* ChristmasLists.json */; };
+		9CD7C7062C28EF72003B4AF1 /* NewListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C7052C28EF72003B4AF1 /* NewListPage.swift */; };
+		9CD7C7082C29C8B9003B4AF1 /* ItemListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C7072C29C8B9003B4AF1 /* ItemListPage.swift */; };
+		9CD7C70A2C29CD75003B4AF1 /* NewItemPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C7092C29CD75003B4AF1 /* NewItemPage.swift */; };
+		9CD7C70C2C306290003B4AF1 /* EditItemPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C70B2C30628F003B4AF1 /* EditItemPage.swift */; };
+		9CD7C70F2C321859003B4AF1 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C70E2C321859003B4AF1 /* UserData.swift */; };
+		9CD7C7112C3255DF003B4AF1 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD7C7102C3255DF003B4AF1 /* CircularProgressView.swift */; };
+		9CF734172C3C52EC003B2C01 /* alex-productions-deck-the-halls-jazz-version.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF734122C3C52EB003B2C01 /* alex-productions-deck-the-halls-jazz-version.mp3 */; };
+		9CF734182C3C52EC003B2C01 /* o-christmas-tree.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF734132C3C52EC003B2C01 /* o-christmas-tree.mp3 */; };
+		9CF734192C3C52EC003B2C01 /* ill-be-home-for-christmas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF734142C3C52EC003B2C01 /* ill-be-home-for-christmas.mp3 */; };
+		9CF7341A2C3C52EC003B2C01 /* silent-night_grand_project.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF734152C3C52EC003B2C01 /* silent-night_grand_project.mp3 */; };
+		9CF7341B2C3C52EC003B2C01 /* we-wish-you-a-merry-christmas.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF734162C3C52EC003B2C01 /* we-wish-you-a-merry-christmas.mp3 */; };
+		9CF7341D2C3C5334003B2C01 /* tchaikovsky-dance-of-the-sugar-plum-fairy.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF7341C2C3C5334003B2C01 /* tchaikovsky-dance-of-the-sugar-plum-fairy.mp3 */; };
+		9CF7341F2C50CC12003B2C01 /* hark-the-herald-angels-sing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9CF7341E2C50CC12003B2C01 /* hark-the-herald-angels-sing.mp3 */; };
+		9CF734212C50D253003B2C01 /* SnowfallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF734202C50D253003B2C01 /* SnowfallView.swift */; };
+		9CF734232C557DD2003B2C01 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF734222C557DD2003B2C01 /* Constants.swift */; };
+		9CF734252C557F66003B2C01 /* DonationsPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF734242C557F66003B2C01 /* DonationsPage.swift */; };
+		9CF734272C55B2BD003B2C01 /* EditListPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CF734262C55B2BD003B2C01 /* EditListPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +74,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9CC7B6E92C351029003C57A9 /* BackgroundImageSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundImageSelector.swift; sourceTree = "<group>"; };
+		9CC7B6ED2C3522CA003C57A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9CC7B6EE2C3A6099003C57A9 /* CountdownTypeSelectionMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTypeSelectionMenu.swift; sourceTree = "<group>"; };
+		9CC7B6F02C3B9285003C57A9 /* VerseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerseData.swift; sourceTree = "<group>"; };
+		9CC7B6F22C3B928C003C57A9 /* Verse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Verse.swift; sourceTree = "<group>"; };
 		9CD7C6A02C18F33F003B4AF1 /* ChristmasCountdown.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChristmasCountdown.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD7C6A32C18F33F003B4AF1 /* ChristmasCountdownApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasCountdownApp.swift; sourceTree = "<group>"; };
 		9CD7C6A52C18F33F003B4AF1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +89,42 @@
 		9CD7C6BA2C18F340003B4AF1 /* ChristmasCountdownUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChristmasCountdownUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CD7C6BE2C18F340003B4AF1 /* ChristmasCountdownUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasCountdownUITests.swift; sourceTree = "<group>"; };
 		9CD7C6C02C18F340003B4AF1 /* ChristmasCountdownUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChristmasCountdownUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9CD7C6CD2C1900D1003B4AF1 /* CountdownPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownPage.swift; sourceTree = "<group>"; };
+		9CD7C6CF2C1AA56A003B4AF1 /* CountdownTimeSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimeSelector.swift; sourceTree = "<group>"; };
+		9CD7C6D22C1AAF91003B4AF1 /* CountdownTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountdownTimer.swift; sourceTree = "<group>"; };
+		9CD7C6D52C1AC0B2003B4AF1 /* VersesPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersesPage.swift; sourceTree = "<group>"; };
+		9CD7C6D82C1BF726003B4AF1 /* MusicPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPage.swift; sourceTree = "<group>"; };
+		9CD7C6DA2C1BFB57003B4AF1 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
+		9CD7C6DF2C1C040E003B4AF1 /* FlipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlipView.swift; sourceTree = "<group>"; };
+		9CD7C6E12C1CD0FB003B4AF1 /* songList.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = songList.json; sourceTree = "<group>"; };
+		9CD7C6E52C1CD2BC003B4AF1 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		9CD7C6E72C1CD2DC003B4AF1 /* SongData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongData.swift; sourceTree = "<group>"; };
+		9CD7C6EF2C1FE67C003B4AF1 /* verses.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = verses.json; sourceTree = "<group>"; };
+		9CD7C6F22C200049003B4AF1 /* ListsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsPage.swift; sourceTree = "<group>"; };
+		9CD7C6F42C214306003B4AF1 /* CustomTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabView.swift; sourceTree = "<group>"; };
+		9CD7C6F62C28DAD8003B4AF1 /* SingleListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleListPage.swift; sourceTree = "<group>"; };
+		9CD7C6F82C28DC36003B4AF1 /* ListPersonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPersonItem.swift; sourceTree = "<group>"; };
+		9CD7C6FA2C28DDEF003B4AF1 /* SettingsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsPage.swift; sourceTree = "<group>"; };
+		9CD7C6FD2C28DE05003B4AF1 /* AboutPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutPage.swift; sourceTree = "<group>"; };
+		9CD7C7012C28E786003B4AF1 /* ListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListManager.swift; sourceTree = "<group>"; };
+		9CD7C7032C28E983003B4AF1 /* ChristmasLists.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = ChristmasLists.json; sourceTree = "<group>"; };
+		9CD7C7052C28EF72003B4AF1 /* NewListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListPage.swift; sourceTree = "<group>"; };
+		9CD7C7072C29C8B9003B4AF1 /* ItemListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListPage.swift; sourceTree = "<group>"; };
+		9CD7C7092C29CD75003B4AF1 /* NewItemPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewItemPage.swift; sourceTree = "<group>"; };
+		9CD7C70B2C30628F003B4AF1 /* EditItemPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemPage.swift; sourceTree = "<group>"; };
+		9CD7C70E2C321859003B4AF1 /* UserData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
+		9CD7C7102C3255DF003B4AF1 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
+		9CF734122C3C52EB003B2C01 /* alex-productions-deck-the-halls-jazz-version.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "alex-productions-deck-the-halls-jazz-version.mp3"; sourceTree = "<group>"; };
+		9CF734132C3C52EC003B2C01 /* o-christmas-tree.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "o-christmas-tree.mp3"; sourceTree = "<group>"; };
+		9CF734142C3C52EC003B2C01 /* ill-be-home-for-christmas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ill-be-home-for-christmas.mp3"; sourceTree = "<group>"; };
+		9CF734152C3C52EC003B2C01 /* silent-night_grand_project.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "silent-night_grand_project.mp3"; sourceTree = "<group>"; };
+		9CF734162C3C52EC003B2C01 /* we-wish-you-a-merry-christmas.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "we-wish-you-a-merry-christmas.mp3"; sourceTree = "<group>"; };
+		9CF7341C2C3C5334003B2C01 /* tchaikovsky-dance-of-the-sugar-plum-fairy.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "tchaikovsky-dance-of-the-sugar-plum-fairy.mp3"; sourceTree = "<group>"; };
+		9CF7341E2C50CC12003B2C01 /* hark-the-herald-angels-sing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "hark-the-herald-angels-sing.mp3"; sourceTree = "<group>"; };
+		9CF734202C50D253003B2C01 /* SnowfallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnowfallView.swift; sourceTree = "<group>"; };
+		9CF734222C557DD2003B2C01 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9CF734242C557F66003B2C01 /* DonationsPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationsPage.swift; sourceTree = "<group>"; };
+		9CF734262C55B2BD003B2C01 /* EditListPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditListPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +175,19 @@
 		9CD7C6A22C18F33F003B4AF1 /* ChristmasCountdown */ = {
 			isa = PBXGroup;
 			children = (
+				9CC7B6ED2C3522CA003C57A9 /* Info.plist */,
+				9CD7C70D2C32183B003B4AF1 /* Common */,
 				9CD7C6A32C18F33F003B4AF1 /* ChristmasCountdownApp.swift */,
 				9CD7C6A52C18F33F003B4AF1 /* ContentView.swift */,
+				9CD7C6F42C214306003B4AF1 /* CustomTabView.swift */,
+				9CD7C6D12C1AAF4F003B4AF1 /* Countdown */,
+				9CD7C6F12C200031003B4AF1 /* Lists */,
+				9CD7C6D72C1BF714003B4AF1 /* Music */,
+				9CD7C6FC2C28DDF5003B4AF1 /* Settings */,
+				9CD7C6D42C1AC09D003B4AF1 /* Verses */,
 				9CD7C6A72C18F340003B4AF1 /* Assets.xcassets */,
 				9CD7C6A92C18F340003B4AF1 /* Preview Content */,
+				9CD7C7032C28E983003B4AF1 /* ChristmasLists.json */,
 			);
 			path = ChristmasCountdown;
 			sourceTree = "<group>";
@@ -125,6 +215,94 @@
 				9CD7C6C02C18F340003B4AF1 /* ChristmasCountdownUITestsLaunchTests.swift */,
 			);
 			path = ChristmasCountdownUITests;
+			sourceTree = "<group>";
+		};
+		9CD7C6D12C1AAF4F003B4AF1 /* Countdown */ = {
+			isa = PBXGroup;
+			children = (
+				9CD7C6CD2C1900D1003B4AF1 /* CountdownPage.swift */,
+				9CD7C6CF2C1AA56A003B4AF1 /* CountdownTimeSelector.swift */,
+				9CD7C6D22C1AAF91003B4AF1 /* CountdownTimer.swift */,
+				9CC7B6E92C351029003C57A9 /* BackgroundImageSelector.swift */,
+				9CC7B6EE2C3A6099003C57A9 /* CountdownTypeSelectionMenu.swift */,
+				9CF734202C50D253003B2C01 /* SnowfallView.swift */,
+			);
+			path = Countdown;
+			sourceTree = "<group>";
+		};
+		9CD7C6D42C1AC09D003B4AF1 /* Verses */ = {
+			isa = PBXGroup;
+			children = (
+				9CD7C6EF2C1FE67C003B4AF1 /* verses.json */,
+				9CC7B6F22C3B928C003C57A9 /* Verse.swift */,
+				9CC7B6F02C3B9285003C57A9 /* VerseData.swift */,
+				9CD7C6D52C1AC0B2003B4AF1 /* VersesPage.swift */,
+			);
+			path = Verses;
+			sourceTree = "<group>";
+		};
+		9CD7C6D72C1BF714003B4AF1 /* Music */ = {
+			isa = PBXGroup;
+			children = (
+				9CD7C6DE2C1C012D003B4AF1 /* Songs */,
+				9CD7C6D82C1BF726003B4AF1 /* MusicPage.swift */,
+				9CD7C6DA2C1BFB57003B4AF1 /* AudioPlayer.swift */,
+				9CD7C6DF2C1C040E003B4AF1 /* FlipView.swift */,
+				9CD7C6E52C1CD2BC003B4AF1 /* Song.swift */,
+				9CD7C6E72C1CD2DC003B4AF1 /* SongData.swift */,
+			);
+			path = Music;
+			sourceTree = "<group>";
+		};
+		9CD7C6DE2C1C012D003B4AF1 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				9CF734122C3C52EB003B2C01 /* alex-productions-deck-the-halls-jazz-version.mp3 */,
+				9CF734142C3C52EC003B2C01 /* ill-be-home-for-christmas.mp3 */,
+				9CF7341E2C50CC12003B2C01 /* hark-the-herald-angels-sing.mp3 */,
+				9CF734132C3C52EC003B2C01 /* o-christmas-tree.mp3 */,
+				9CF734152C3C52EC003B2C01 /* silent-night_grand_project.mp3 */,
+				9CF734162C3C52EC003B2C01 /* we-wish-you-a-merry-christmas.mp3 */,
+				9CF7341C2C3C5334003B2C01 /* tchaikovsky-dance-of-the-sugar-plum-fairy.mp3 */,
+				9CD7C6E12C1CD0FB003B4AF1 /* songList.json */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
+		9CD7C6F12C200031003B4AF1 /* Lists */ = {
+			isa = PBXGroup;
+			children = (
+				9CD7C70B2C30628F003B4AF1 /* EditItemPage.swift */,
+				9CF734262C55B2BD003B2C01 /* EditListPage.swift */,
+				9CD7C7072C29C8B9003B4AF1 /* ItemListPage.swift */,
+				9CD7C7012C28E786003B4AF1 /* ListManager.swift */,
+				9CD7C6F22C200049003B4AF1 /* ListsPage.swift */,
+				9CD7C6F82C28DC36003B4AF1 /* ListPersonItem.swift */,
+				9CD7C7092C29CD75003B4AF1 /* NewItemPage.swift */,
+				9CD7C7052C28EF72003B4AF1 /* NewListPage.swift */,
+				9CD7C6F62C28DAD8003B4AF1 /* SingleListPage.swift */,
+			);
+			path = Lists;
+			sourceTree = "<group>";
+		};
+		9CD7C6FC2C28DDF5003B4AF1 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9CD7C6FA2C28DDEF003B4AF1 /* SettingsPage.swift */,
+				9CD7C6FD2C28DE05003B4AF1 /* AboutPage.swift */,
+				9CF734242C557F66003B2C01 /* DonationsPage.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		9CD7C70D2C32183B003B4AF1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				9CD7C70E2C321859003B4AF1 /* UserData.swift */,
+				9CD7C7102C3255DF003B4AF1 /* CircularProgressView.swift */,
+				9CF734222C557DD2003B2C01 /* Constants.swift */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,8 +409,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CF7341F2C50CC12003B2C01 /* hark-the-herald-angels-sing.mp3 in Resources */,
+				9CD7C7042C28E983003B4AF1 /* ChristmasLists.json in Resources */,
+				9CF734182C3C52EC003B2C01 /* o-christmas-tree.mp3 in Resources */,
+				9CF7341D2C3C5334003B2C01 /* tchaikovsky-dance-of-the-sugar-plum-fairy.mp3 in Resources */,
+				9CD7C6E22C1CD0FC003B4AF1 /* songList.json in Resources */,
 				9CD7C6AB2C18F340003B4AF1 /* Preview Assets.xcassets in Resources */,
+				9CF7341A2C3C52EC003B2C01 /* silent-night_grand_project.mp3 in Resources */,
 				9CD7C6A82C18F340003B4AF1 /* Assets.xcassets in Resources */,
+				9CF7341B2C3C52EC003B2C01 /* we-wish-you-a-merry-christmas.mp3 in Resources */,
+				9CF734192C3C52EC003B2C01 /* ill-be-home-for-christmas.mp3 in Resources */,
+				9CD7C6F02C1FE67C003B4AF1 /* verses.json in Resources */,
+				9CF734172C3C52EC003B2C01 /* alex-productions-deck-the-halls-jazz-version.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -257,8 +445,38 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CD7C6D92C1BF726003B4AF1 /* MusicPage.swift in Sources */,
+				9CD7C70C2C306290003B4AF1 /* EditItemPage.swift in Sources */,
+				9CD7C6E02C1C040E003B4AF1 /* FlipView.swift in Sources */,
+				9CD7C6D32C1AAF91003B4AF1 /* CountdownTimer.swift in Sources */,
+				9CF734212C50D253003B2C01 /* SnowfallView.swift in Sources */,
+				9CF734232C557DD2003B2C01 /* Constants.swift in Sources */,
+				9CD7C7062C28EF72003B4AF1 /* NewListPage.swift in Sources */,
+				9CD7C7082C29C8B9003B4AF1 /* ItemListPage.swift in Sources */,
+				9CF734252C557F66003B2C01 /* DonationsPage.swift in Sources */,
+				9CC7B6EF2C3A6099003C57A9 /* CountdownTypeSelectionMenu.swift in Sources */,
+				9CC7B6F32C3B928C003C57A9 /* Verse.swift in Sources */,
+				9CD7C6F52C214306003B4AF1 /* CustomTabView.swift in Sources */,
+				9CF734272C55B2BD003B2C01 /* EditListPage.swift in Sources */,
+				9CD7C70A2C29CD75003B4AF1 /* NewItemPage.swift in Sources */,
 				9CD7C6A62C18F33F003B4AF1 /* ContentView.swift in Sources */,
+				9CD7C6E62C1CD2BC003B4AF1 /* Song.swift in Sources */,
+				9CD7C7112C3255DF003B4AF1 /* CircularProgressView.swift in Sources */,
+				9CD7C6DB2C1BFB57003B4AF1 /* AudioPlayer.swift in Sources */,
+				9CC7B6EA2C351029003C57A9 /* BackgroundImageSelector.swift in Sources */,
+				9CC7B6F12C3B9285003C57A9 /* VerseData.swift in Sources */,
+				9CD7C6F32C200049003B4AF1 /* ListsPage.swift in Sources */,
+				9CD7C70F2C321859003B4AF1 /* UserData.swift in Sources */,
+				9CD7C6FE2C28DE05003B4AF1 /* AboutPage.swift in Sources */,
+				9CD7C6F72C28DAD8003B4AF1 /* SingleListPage.swift in Sources */,
+				9CD7C6CE2C1900D1003B4AF1 /* CountdownPage.swift in Sources */,
+				9CD7C6F92C28DC36003B4AF1 /* ListPersonItem.swift in Sources */,
+				9CD7C7022C28E786003B4AF1 /* ListManager.swift in Sources */,
+				9CD7C6FB2C28DDEF003B4AF1 /* SettingsPage.swift in Sources */,
 				9CD7C6A42C18F33F003B4AF1 /* ChristmasCountdownApp.swift in Sources */,
+				9CD7C6E82C1CD2DC003B4AF1 /* SongData.swift in Sources */,
+				9CD7C6D62C1AC0B2003B4AF1 /* VersesPage.swift in Sources */,
+				9CD7C6D02C1AA56A003B4AF1 /* CountdownTimeSelector.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -425,11 +643,14 @@
 				DEVELOPMENT_TEAM = 4LPCV87RQ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChristmasCountdown/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Christmas!";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -454,11 +675,14 @@
 				DEVELOPMENT_TEAM = 4LPCV87RQ2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ChristmasCountdown/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Christmas!";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
