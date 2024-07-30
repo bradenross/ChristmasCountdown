@@ -41,11 +41,10 @@ struct SettingsPage: View {
                                 UserDefaults.standard.setValue(musicOnLaunch, forKey: "musicOnLaunch")
                             }
                         
-//                    TODO: Toggle for enabling music in the background when app is not open
-//                        Toggle("Enable Background Music", isOn: $backgroundAudioEnabled)
-//                            .onChange(of: backgroundAudioEnabled) {
-//                                UserDefaults.standard.setValue(backgroundAudioEnabled, forKey: "backgroundAudioEnabled")
-//                            }
+                        Toggle("Enable Background Music", isOn: $backgroundAudioEnabled)
+                            .onChange(of: backgroundAudioEnabled) {
+                                UserDefaults.standard.setValue(backgroundAudioEnabled, forKey: "backgroundAudioEnabled")
+                            }
                         
                     } header: {
                         Text("Music")

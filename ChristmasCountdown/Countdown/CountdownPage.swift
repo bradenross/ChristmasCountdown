@@ -77,9 +77,9 @@ struct CountdownPage: View {
                         }
                         
                         ShareLink(
-                            item: URL(string: "https://www.apple.com")!,
+                            item: URL(string: "https://apps.apple.com/us/christmas-countdown/id6584518026")!,
                             message: Text("Can you believe there is only \(timeUntilChristmas().0.day ?? 0) days left until Christmas?!"),
-                            preview: SharePreview("Christmas Countdown", image: Image("deck-the-halls"))
+                            preview: SharePreview("Christmas Countdown")
                         ) {
                             Image(systemName: "square.and.arrow.up")
                                 .offset(x: 0, y: -1)

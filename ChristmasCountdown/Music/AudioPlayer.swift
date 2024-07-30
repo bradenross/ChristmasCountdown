@@ -8,13 +8,18 @@
 import Foundation
 import SwiftUI
 import AVFoundation
+import Combine
 
 class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     var player: AVAudioPlayer?
     var timeObserverToken: Any?
+    var cancellable: AnyCancellable?
 
     @Published var isPlaying: Bool = false
+    @Published var isPlayingPreviousState: Bool = false
     @Published var currentTrackIndex: Int = 0
+    @Published var totalTime: TimeInterval = 0
+    @Published private var backgroundAudioEnabled: Bool = UserDefaults.standard.bool(forKey: "backgroundAudioEnabled")
     var tracks: [Song] = []
     
     var timer: Timer?
@@ -24,16 +29,24 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
         super.init()
         setupAudioSession()
         loadTrack(at: currentTrackIndex)
+        observeUserDefaultsChanges()
     }
 
     private func setupAudioSession() {
-        let backgroundAudioEnabled = UserDefaults.standard.bool(forKey: "backgroundAudioEnabled")
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default, options: backgroundAudioEnabled ? [] : [.mixWithOthers])
             try AVAudioSession.sharedInstance().setActive(true)
         } catch {
             print("Failed to set up audio session.")
         }
+    }
+    
+    private func observeUserDefaultsChanges() {
+        cancellable = NotificationCenter.default.publisher(for: UserDefaults.didChangeNotification)
+            .sink { [weak self] _ in
+                self?.backgroundAudioEnabled = UserDefaults.standard.bool(forKey: "backgroundAudioEnabled")
+                self?.setupAudioSession()
+            }
     }
 
     func loadTrack(at index: Int) {
@@ -71,6 +84,7 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
         stop()
         currentTrackIndex = (currentTrackIndex + 1) % tracks.count
         loadTrack(at: currentTrackIndex)
+        updateTotalTime()
         play()
     }
 
@@ -94,5 +108,22 @@ class AudioPlayer: NSObject, ObservableObject, AVAudioPlayerDelegate {
     func stopTimer() {
         timer?.invalidate()
         timer = nil
+    }
+    
+    func updateTotalTime() {
+        totalTime = player?.duration ?? 0
+    }
+    
+    func handleAppInBackground() {
+        if !backgroundAudioEnabled {
+            isPlayingPreviousState = isPlaying
+            pause()
+        }
+    }
+    
+    func handleAppInForeground() {
+        if !backgroundAudioEnabled && isPlayingPreviousState {
+            play()
+        }
     }
 }
