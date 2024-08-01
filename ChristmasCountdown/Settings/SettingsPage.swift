@@ -18,13 +18,14 @@ struct SettingsPage: View {
                 List(){
                     AboutPage()
                     
-                    Section() {
-                        NavigationLink(destination: DonationsPage()) {
-                            Text("Help the app :)")
-                        }
-                    } header: {
-                        Text("Donate")
-                    }
+//                TODO: Add Donation page or payment page if user base grows
+//                    Section() {
+//                        NavigationLink(destination: DonationsPage()) {
+//                            Text("Help the app :)")
+//                        }
+//                    } header: {
+//                        Text("Donate")
+//                    }
                     
                     Section() {
                         Toggle("Snowfall", isOn: $snowfallEnabled)

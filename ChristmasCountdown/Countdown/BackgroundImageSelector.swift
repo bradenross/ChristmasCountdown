@@ -33,7 +33,6 @@ struct BackgroundImageSelector: View {
                             .shadow(color: colorScheme == .dark ? .white : .black, radius: selectedBackground == num ? 10 : 0)
                             .onTapGesture {
                                 selectedBackground = num
-                                print("HERE")
                             }
                     }
                 }
