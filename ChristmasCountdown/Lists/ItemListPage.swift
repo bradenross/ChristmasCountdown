@@ -11,11 +11,10 @@ struct ItemListPage: View {
     @ObservedObject var listManager: ListManager
     var list: ChristmasList
     
-    @State var showClearAlert: Bool = false
-    
-    @State var newItemPageOpen: Bool = false
-    @State var editListPageOpen: Bool = false
-    @State var totalCost: Double = 0.0
+    @State private var showClearAlert: Bool = false
+    @State private var newItemPageOpen: Bool = false
+    @State private var editListPageOpen: Bool = false
+    @State private var totalCost: Double = 0.0
     
     var body: some View {
         VStack() {
@@ -111,10 +110,10 @@ struct ItemListPage: View {
             .navigationTitle(list.name)
         }
         .safeAreaPadding(.bottom, Constants.Paddings.safeAreaPaddingBottomTabView)
-        .onAppear() {
+        .onChange(of: list.items) {
             totalCost = list.calculateTotalCost()
         }
-        .onChange(of: list.items) { _ in
+        .onAppear() {
             totalCost = list.calculateTotalCost()
         }
     }

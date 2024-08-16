@@ -18,13 +18,14 @@ struct SettingsPage: View {
                 List(){
                     AboutPage()
                     
-                    Section() {
-                        NavigationLink(destination: DonationsPage()) {
-                            Text("Help the app :)")
-                        }
-                    } header: {
-                        Text("Donate")
-                    }
+//                TODO: Add Donation page or payment page if user base grows
+//                    Section() {
+//                        NavigationLink(destination: DonationsPage()) {
+//                            Text("Help the app :)")
+//                        }
+//                    } header: {
+//                        Text("Donate")
+//                    }
                     
                     Section() {
                         Toggle("Snowfall", isOn: $snowfallEnabled)
@@ -41,11 +42,10 @@ struct SettingsPage: View {
                                 UserDefaults.standard.setValue(musicOnLaunch, forKey: "musicOnLaunch")
                             }
                         
-//                    TODO: Toggle for enabling music in the background when app is not open
-//                        Toggle("Enable Background Music", isOn: $backgroundAudioEnabled)
-//                            .onChange(of: backgroundAudioEnabled) {
-//                                UserDefaults.standard.setValue(backgroundAudioEnabled, forKey: "backgroundAudioEnabled")
-//                            }
+                        Toggle("Enable Background Music", isOn: $backgroundAudioEnabled)
+                            .onChange(of: backgroundAudioEnabled) {
+                                UserDefaults.standard.setValue(backgroundAudioEnabled, forKey: "backgroundAudioEnabled")
+                            }
                         
                     } header: {
                         Text("Music")

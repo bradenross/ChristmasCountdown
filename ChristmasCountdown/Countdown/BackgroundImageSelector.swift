@@ -23,20 +23,17 @@ struct BackgroundImageSelector: View {
     var body: some View {
         NavigationStack() {
             ScrollView() {
-                VStack(alignment: .leading, spacing: 25) {
-                    LazyVGrid(columns: columns, spacing: 10) {
-                        ForEach(0..<numOfBackgrounds, id: \.self) { num in
-                            Image("background\(num)")
-                                .resizable()
-                                .frame(maxWidth: 100, maxHeight: 150)
-                                .aspectRatio(contentMode: .fill)
-                                .padding()
-                                .shadow(color: colorScheme == .dark ? .white : .black, radius: selectedBackground == num ? 10 : 0)
-                                .onTapGesture {
-                                    selectedBackground = num
-                                    print("HERE")
-                                }
-                        }
+                LazyVGrid(columns: columns, spacing: 10) {
+                    ForEach(0..<numOfBackgrounds, id: \.self) { num in
+                        Image("background\(num)")
+                            .resizable()
+                            .frame(maxWidth: 100, maxHeight: 150)
+                            .aspectRatio(contentMode: .fill)
+                            .padding()
+                            .shadow(color: colorScheme == .dark ? .white : .black, radius: selectedBackground == num ? 10 : 0)
+                            .onTapGesture {
+                                selectedBackground = num
+                            }
                     }
                 }
             }

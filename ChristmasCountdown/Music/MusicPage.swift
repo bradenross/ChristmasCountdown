@@ -15,7 +15,6 @@ struct MusicPage: View {
     @State private var isPlaying = false
 
     @State private var musicProgress: TimeInterval = 0
-    @State private var totalTime: TimeInterval = 0
     
     @State private var imageFlipped: Bool = false
     @State private var angle: Double = 0
@@ -79,10 +78,10 @@ struct MusicPage: View {
                 .padding(.horizontal, 25)
                 .tint(Color("darkGreen"))
             HStack() {
-                Text("\(formattedTime(musicProgress * totalTime))")
+                Text("\(formattedTime(musicProgress * audioPlayer.totalTime))")
                     .foregroundStyle(.white)
                 Spacer()
-                Text("\(formattedTime(totalTime))")
+                Text("\(formattedTime(audioPlayer.totalTime))")
                     .foregroundStyle(.white)
             }
             .padding(.horizontal, 25)
@@ -139,7 +138,7 @@ struct MusicPage: View {
         .background(.red)
         .onAppear {
             if !audioPlayer.tracks.isEmpty {
-                updateTotalTime()
+                audioPlayer.updateTotalTime()
                 audioPlayer.startTimer()
                 updateMusicProgress() // Immediately update the progress when the view appears
             }
@@ -149,12 +148,12 @@ struct MusicPage: View {
         }
         .onReceive(audioPlayer.$currentTrackIndex) { _ in
             musicProgress = 0
-            updateTotalTime()
+            audioPlayer.updateTotalTime()
             audioPlayer.startTimer()
         }
         .onReceive(audioPlayer.objectWillChange) {
             if !editingSlider, let player = audioPlayer.player {
-                self.musicProgress = player.currentTime / self.totalTime
+                self.musicProgress = player.currentTime / audioPlayer.totalTime
             }
         }
     }
@@ -169,13 +168,9 @@ struct MusicPage: View {
         editingSlider = editingStarted
         print(editingSlider)
         if !editingStarted {
-            let newTime = totalTime * musicProgress
+            let newTime = audioPlayer.totalTime * musicProgress
             audioPlayer.player?.currentTime = newTime
         }
-    }
-
-    private func updateTotalTime() {
-        totalTime = audioPlayer.player?.duration ?? 0
     }
     
     private func resetProgress() {
@@ -185,7 +180,7 @@ struct MusicPage: View {
     
     private func updateMusicProgress() {
         if !editingSlider, let player = audioPlayer.player {
-            self.musicProgress = player.currentTime / self.totalTime
+            self.musicProgress = player.currentTime / audioPlayer.totalTime
         }
     }
 }

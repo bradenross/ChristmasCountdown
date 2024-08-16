@@ -14,9 +14,13 @@ struct ContentView: View {
     @StateObject private var audioPlayer: AudioPlayer
     
     @State var isTabViewHidden: Bool = false
+    
+    @Environment(\.scenePhase) var scenePhase
 
     init() {
         UserDefaults.standard.register(defaults: ["snowfallEnabled": true])
+        UserDefaults.standard.register(defaults: ["musicOnLaunch": true])
+        UserDefaults.standard.register(defaults: ["backgroundAudioEnabled": true])
         _audioPlayer = StateObject(wrappedValue: AudioPlayer(tracks: []))
     }
     
@@ -41,6 +45,20 @@ struct ContentView: View {
                 if(UserDefaults.standard.bool(forKey: "musicOnLaunch")) {
                     audioPlayer.play()
                 }
+            }
+        }
+        .onChange(of: scenePhase) { newPhase in
+            switch newPhase {
+            case .active:
+                print("App is in the foreground")
+                audioPlayer.handleAppInForeground()
+            case .inactive:
+                print("App is inactive")
+            case .background:
+                print("App is in the background")
+                audioPlayer.handleAppInBackground()
+            @unknown default:
+                print("Unexpected new value.")
             }
         }
     }
