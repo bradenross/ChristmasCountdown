@@ -25,7 +25,7 @@ struct BackgroundImageSelector: View {
             ScrollView() {
                 LazyVGrid(columns: columns, spacing: 10) {
                     ForEach(0..<numOfBackgrounds, id: \.self) { num in
-                        Image("background\(num)")
+                        Image("background\(num)_thumbnail")
                             .resizable()
                             .frame(maxWidth: 100, maxHeight: 150)
                             .aspectRatio(contentMode: .fill)

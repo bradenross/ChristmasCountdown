@@ -30,7 +30,7 @@ struct CountdownTimer: View {
                 Text("\(totalSeconds / 3600) Hours\nUntil Christmas!")
                     .countdownTextStyle()
             case 4:
-                Text("\((timeRemaining.day ?? 0)) Days\nUntil Christmas!")
+                Text("\((timeRemaining.day ?? 0) + 1) Days\nUntil Christmas!")
                     .countdownTextStyle()
             case 5:
                 Text("\((timeRemaining.day ?? 0) + 1) Sleeps\nUntil Christmas!")
