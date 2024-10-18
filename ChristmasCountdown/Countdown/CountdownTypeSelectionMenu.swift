@@ -11,10 +11,16 @@ struct CountdownTypeSelectionMenu: View {
     @Binding var selectedType: Int
     
     var selectionItems: [String] = ["Time", "Seconds", "Minutes", "Hours", "Days", "Sleeps", "Breaths", "Heartbeats", "Presents Left to Wrap", "Candy Canes"]
+    
+    func setTimeSelection(index: Int) {
+        selectedType = index
+        UserDefaults.standard.setValue(index, forKey: "timeSelection")
+    }
+    
     var body: some View {
         Menu {
             ForEach(Array(selectionItems.enumerated()), id: \.offset){ index, item in
-                Button(action: {selectedType = index}){
+                Button(action: {setTimeSelection(index: index)}){
                     Text(item)
                         .fontWeight(.regular)
                         .font(.title3)

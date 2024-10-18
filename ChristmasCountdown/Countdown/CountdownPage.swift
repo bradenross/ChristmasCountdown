@@ -109,6 +109,7 @@ struct CountdownPage: View {
         .sensoryFeedback(.success, trigger: isUiHidden)
         .onAppear() {
             selectedBackground = UserDefaults.standard.integer(forKey: "countdownBackground")
+            selectedItem = UserDefaults.standard.integer(forKey: "timeSelection")
         }
         .sheet(isPresented: $backgroundSheetOpen) {
             BackgroundImageSelector(selectedBackground: $selectedBackground)

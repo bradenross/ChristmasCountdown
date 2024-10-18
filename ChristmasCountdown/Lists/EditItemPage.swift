@@ -61,7 +61,7 @@ struct EditItemPage: View {
                     }
                     isValid = isValidInput(newValue)
                 }
-            HStack() {
+            VStack() {
                 TextField("URL", text: $url)
                     .foregroundStyle(.white)
                     .padding()
@@ -69,10 +69,24 @@ struct EditItemPage: View {
                         RoundedRectangle(cornerRadius: 15)
                             .fill(.gray.opacity(0.5))
                     }
-                Button(action: {
-                    UIPasteboard.general.string = self.url
-                }) {
-                    Text("Copy")
+                HStack() {
+                    Spacer()
+                    Button(action: {
+                        UIPasteboard.general.string = self.url
+                    }) {
+                        Text("Copy URL")
+                            .padding(.vertical, 10)
+                    }
+                    Spacer()
+                    Button(action: {
+                        if let copiedText = UIPasteboard.general.string {
+                            url = copiedText
+                        }
+                    }) {
+                        Text("Paste URL")
+                            .padding(.vertical, 10)
+                    }
+                    Spacer()
                 }
             }
         }

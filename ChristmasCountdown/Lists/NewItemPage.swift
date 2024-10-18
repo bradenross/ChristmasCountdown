@@ -87,6 +87,25 @@ struct NewItemPage: View {
                         .stroke(.red, lineWidth: nameError ? 3 : 0)
                 }
             HStack() {
+                Spacer()
+                Button(action: {
+                    UIPasteboard.general.string = self.url
+                }) {
+                    Text("Copy URL")
+                        .padding(.vertical, 10)
+                }
+                Spacer()
+                Button(action: {
+                    if let copiedText = UIPasteboard.general.string {
+                        url = copiedText
+                    }
+                }) {
+                    Text("Paste URL")
+                        .padding(.vertical, 10)
+                }
+                Spacer()
+            }
+            HStack() {
                 Toggle("Already Purchased?", isOn: $isPurchased)
             }
             Spacer()

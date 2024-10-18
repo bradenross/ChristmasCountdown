@@ -15,7 +15,11 @@ struct AboutPage: View {
                     .fontWeight(.semibold)
                     .multilineTextAlignment(.center)
                     .padding(.bottom, 25)
-                Text("Christmas list icons created by [Umeicon](https://www.flaticon.com/authors/umeicon)\n[Christmas icons created by Umeicon - Flaticon](https://www.flaticon.com/free-icons/christmas)")
+                Text("Visit our [Instagram](https://www.instagram.com/xmascountdownapp/)!")
+                    .fontWeight(.semibold)
+                    .multilineTextAlignment(.center)
+                    .padding(.bottom, 25)
+                Text("Christmas list icons created by [Umeicon](https://www.flaticon.com/authors/umeicon)")
                     .multilineTextAlignment(.center)
                     .font(.callout)
             }
